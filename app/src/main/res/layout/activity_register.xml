@@ -1,192 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4EEEE"
-    android:backgroundTint="#171616"
-    android:clickable="false"
-    tools:context=".Register"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="-13dp">
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="259dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="364dp"
-        android:layout_marginEnd="8dp"
-        android:background="#FAF9F9"
-        android:text="Name and Surname"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.669"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.666" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="259dp"
-        android:layout_height="20dp"
-        android:layout_marginBottom="60dp"
-        android:background="#EDE5E5"
-        android:inputType="text|textEmailSubject"
-        android:text="@string/email"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintEnd_toEndOf="@+id/textView5"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="259dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="8dp"
-        android:background="#E6DEDE"
-        android:inputType="textPassword"
-        android:text="Password"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintEnd_toEndOf="@+id/textView7"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.813"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="311dp"
-        android:layout_height="233dp"
-        android:layout_marginBottom="64dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.181" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FF9800"
-        android:text="Sign up"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView9"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton4"
-        app:layout_constraintVertical_bias="0.76" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/already_have_an_account"
-        android:textColor="#FF9800"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="78dp"
-        android:layout_height="23dp"
-        android:clickable="true"
-        android:onClick="Transfer"
-        android:text="Sign In"
-        android:textColor="#FF9800"
-        android:textSize="16sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.82"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="TouchTargetSizeCheck" />
+    android:background="#121111"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".register">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="389dp"
-        android:layout_height="318dp"
-        android:contentDescription="Logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.727"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038"
-        app:srcCompat="@drawable/handyphoto" />
+        android:id="@+id/imageView"
+        android:layout_width="391dp"
+        android:layout_height="192dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/handyphoto" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="193dp"
-        android:layout_height="48dp"
-        android:text="Johhanesburg"
-        android:textColor="#FF9800"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton2"
-        app:layout_constraintEnd_toEndOf="@+id/radioButton2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/radioButton2"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.208" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="193dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="8dp"
-        android:text="Carnival city"
-        android:textColor="#FF9800"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton2"
-        tools:ignore="TouchTargetSizeCheck" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:gravity="center_horizontal"
+            android:text="Create an account"
+            android:textColor="#FF9800"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="193dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="72dp"
-        android:text="Tembisa"
-        android:textColor="#FF9800"
-        app:layout_constraintEnd_toEndOf="@+id/radioButton3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/radioButton3"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:ignore="TouchTargetSizeCheck" />
+        <EditText
+            android:id="@+id/etRegEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:bufferType="normal"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#FF9800"
+            android:textColorHint="#FF9800" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select location"
-        android:textColor="#FF9800"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/radioButton"
-        app:layout_constraintHorizontal_bias="0.524"
-        app:layout_constraintStart_toStartOf="@+id/radioButton"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.283" />
+        <EditText
+            android:id="@+id/etRegPas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#FF9800"
+            android:textColorHint="#FF9800" />
 
-    <RadioButton
-        android:id="@+id/radioButton4"
-        android:layout_width="193dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="12dp"
-        android:text="@string/vosloorus"
-        android:textColor="#FF9800"
-        app:layout_constraintEnd_toEndOf="@+id/radioButton3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/radioButton3"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton3"
-        tools:ignore="TouchTargetSizeCheck" />
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#FF9800"
+            android:backgroundTint="#FF9800"
+            android:text="sign up"
+            android:textColor="@color/black" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already on Handy mike"
+                android:textColor="#FFC107"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvLoginHere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Login here"
+                android:textColor="#FF9800"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Customer"
+                android:textColor="#FF9800"
+                android:textColorLink="#FF9800" />
+
+            <RadioButton
+                android:id="@+id/teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Handyman"
+                android:textColor="#FF9800"
+                android:textColorLink="#FF9800" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

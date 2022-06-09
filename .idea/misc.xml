@@ -5,7 +5,10 @@
       <map>
         <entry key="..\:/Users/2360871/AndroidStudioProjects/HandyMan/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/2360871/AndroidStudioProjects/HandyMan/app/src/main/res/layout/activity_register.xml" value="0.35260416666666666" />
+        <entry key="app/src/main/res/layout/activity_customer.xml" value="0.24739583333333334" />
+        <entry key="app/src/main/res/layout/activity_handyman_dashboard.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.22509057971014493" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1276595744680851" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.25" />
       </map>
     </option>

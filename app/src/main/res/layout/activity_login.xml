@@ -1,97 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#201A1A"
-    android:backgroundTint="#171616"
-    android:backgroundTintMode="src_atop"
-    tools:context=".Login">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="187dp"
-        android:layout_height="40dp"
-        android:bufferType="editable"
-        android:text="Dont have an Account yet"
-        android:textColor="#FBEFEF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.758" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="173dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="156dp"
-        android:clickable="true"
-        android:onClick="Move"
-        android:text="Register"
-        android:textColor="#FF9800"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="366dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="12dp"
-        android:background="#F3F1F1"
-        android:bufferType="normal"
-        android:text="  Email"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="365dp"
-        android:layout_height="40dp"
-        android:background="#E8E0E0"
-        android:bufferType="spannable"
-        android:text="   Password"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.602" />
+    android:background="#121111"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".login">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="381dp"
-        android:layout_height="296dp"
-        android:layout_marginBottom="36dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/handyphoto" />
+        android:layout_width="353dp"
+        android:layout_height="195dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/handyphoto" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="363dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#FF9800"
-        android:text="Sign In"
-        android:textColor="#1E1B1B"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:gravity="center_horizontal"
+            android:text="Login"
+            android:textColor="#FF9800"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/etLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#FF9800"
+            android:textColorHint="#FF9800" />
+
+        <EditText
+            android:id="@+id/etLoginPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#FF9800"
+            android:textColorHint="#FF9800" />
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#FF9800"
+            android:text="Login"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not on Wits Academy yet"
+                android:textColor="#EAE4E4"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvRegisterHere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Register here"
+                android:textColor="#FF9800"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/student"
+                android:layout_width="142dp"
+                android:layout_height="45dp"
+                android:checked="true"
+                android:text="Student"
+                android:textColor="#FF9800" />
+
+            <RadioButton
+                android:id="@+id/teacher"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:text="Teacher"
+                android:textColor="#FF9800" />
+
+            <RelativeLayout
+                android:id="@+id/loadingPanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:progressTint="#FF9800"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>
